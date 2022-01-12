@@ -1,0 +1,16 @@
+.box-icon{
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+    border: 1px solid black;
+}
+
+.blue{
+   color: blue; 
+}
+.green{
+   color: green; 
+}
+.orange{
+   color: orange; 
+}
