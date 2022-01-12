@@ -1,10 +1,49 @@
-.box-icon{
-    width: 100px;
-    height: 100px;
-    background-color: silver;
-    border: 1px solid black;
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
+h1{
+    color:lightseagreen;
+    margin:20px;
+}
+
+.filter-nav{
+    height: 50px;
+    color: white;
+    background-color: lightseagreen;
+    text-align: center;
+    line-height: 50px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: silver;
+    margin: 0 20px;
+}
+
+.box-icon{
+    width:calc(20% - 40px);
+    background-color: whitesmoke;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box-icon>div{
+    margin:5px
+}
+
+.fas{
+    font-size: 60px;
+}
 .blue{
    color: blue; 
 }
