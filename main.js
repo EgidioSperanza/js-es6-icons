@@ -163,24 +163,24 @@ function createOption(e) {
   return options;
 }
 
-function chooseSelect() {
+function chooseSelect(iconsType, container) {
   const selectElement = document.querySelector(".filter-icons");
   selectElement.addEventListener("change", (event) => {
     grid.innerHTML = "";
-    icons.forEach((icons) => {
-      if (icons.type === event.target.value || event.target.value === "all") {
-        boxTemplate(grid, icons, icons.name.toUpperCase());
+    iconsType.forEach((element) => {
+      if (element.type === event.target.value || event.target.value === "all") {
+        boxTemplate(container, element, element.name.toUpperCase());
       }
     });
   });
 }
 
-function displayGrid() {
+function displayGrid(e, container) {
   createSelect();
-  chooseSelect();
-  icons.forEach((icons) => {
-    boxTemplate(grid, icons, icons.name.toUpperCase());
+  chooseSelect(e,container);
+  e.forEach((element) => {
+    boxTemplate(container, element, element.name.toUpperCase());
   });
 }
 
-displayGrid();
+displayGrid(icons, grid);
